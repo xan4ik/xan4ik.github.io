@@ -1,0 +1,42 @@
+
+.load_image(@img_name){
+    background: url("@{sourse_img_path}/@{img_name}");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+
+.header(@color, @size){
+    font-family: "YesevaOne";
+    font-size: @size;
+    color: @color;
+}
+
+.regular(@color, @size){
+    font-family: "Myriad Pro";
+    font-size: @size;
+    color: @color
+}
+
+.flex-row(){
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column(){
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row(@content, @align){
+    .flex-row();
+    justify-content: @content;
+    align-items: @align;
+}
+
+.flex-column(@content, @align){
+    .flex-column();
+    justify-content: @content;
+    align-items: @align;
+}
+
+
