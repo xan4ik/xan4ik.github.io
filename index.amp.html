@@ -1,0 +1,1067 @@
+<!DOCTYPE html >
+
+<html ⚡ lang="en">
+    
+  <head>
+    <meta charset="utf-8">
+    <title>Задание 4</title>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+
+    <link rel="canonical" href="index.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      </style>
+      <noscript>
+        <style amp-boilerplate>
+          body {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none;
+          }
+        </style>
+      </noscript>
+
+    <style amp-custom>
+
+@font-face {
+  font-family: "GentiumBookBasic";
+  src: url(fonts/GenBkBasB.ttf);
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(fonts/et-book-roman-line-figures.ttf);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(180deg, black, transparent);
+}
+.header .img-logo {
+  padding-left: 15%;
+  height: 50%;
+  float: left;
+}
+.header #icon {
+  width: 60px;
+  height: auto;
+}
+.header nav {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-end;
+  width: 100%;
+}
+.header nav ul {
+  display: flex;
+}
+.header nav ul li {
+  font-family: "GentiumBookBasic";
+  font-size: 21px;
+  color: white;
+  list-style-type: none;
+  padding: 0 10px;
+}
+.promo {
+  padding-top: 15%;
+  padding-bottom: 10%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  background: url("images/promo.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.promo #promo-title {
+  width: 55%;
+  font-family: "YesevaOne";
+  font-size: 90px;
+  text-align: center;
+  color: white;
+}
+.promo #promo-decoration {
+  width: 18%;
+  height: 45px;
+  margin-top: 25px;
+  background: url("images/Decoration.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.promo .button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: center;
+  width: max-content;
+  margin-top: 25px;
+}
+.promo .button-container #promo-button-left {
+  margin-right: 10px;
+  width: 230px;
+  height: 60px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+  background: rgba(0, 0, 0, 0.5);
+}
+.promo .button-container #promo-button-right {
+  width: 230px;
+  height: 60px;
+  color: #000000;
+  font-family: "Lato";
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  background: rgba(255, 255, 255, 0.5);
+}
+.about {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: url("images/about.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.about .about-info-container {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-info-container .title {
+  font-family: "YesevaOne";
+  font-size: 36px;
+  color: #cc9900;
+}
+.about .about-info-container .description {
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+.about .about-info-container #cook {
+  position: relative;
+  left: 30px;
+}
+.about .image-container {
+  width: 50%;
+  height: 100%;
+}
+.about .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.ingredients {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background: url("images/ingridients.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.ingredients .content {
+  width: 40%;
+  height: 65%;
+  padding-top: 50px;
+  margin-right: 5%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+.ingredients .content .title {
+  font-family: "YesevaOne";
+  font-size: 36px;
+  color: #ffffff;
+}
+.ingredients .content .description {
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  color: #ffffff;
+  width: 60%;
+  text-align: center;
+}
+.ingredients .content .image-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ingredients .content .image-container img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menu {
+  width: 100%;
+  height: 990px;
+  background: url("images/menu.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu .menu-container {
+  width: 30%;
+}
+.menu .menu-container .menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+.menu .menu-container .menu-section .title {
+  font-family: "YesevaOne";
+  font-size: 36px;
+  color: #cc9900;
+}
+.menu .menu-container .menu-section .item-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: flex-start;
+  width: 100%;
+}
+.menu .menu-container .menu-section .item-list .menu-item {
+  text-align: left;
+  margin-top: 20px;
+  padding: 5px 10px;
+  width: 100%;
+}
+.menu .menu-container .menu-section .item-list .menu-item .item-header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu-container .menu-section .item-list .menu-item .item-header .sub-title {
+  font-family: "YesevaOne";
+  font-size: 20px;
+  color: #cc9900;
+  margin: 0px;
+}
+.menu .menu-container .menu-section .item-list .menu-item .item-header .coast {
+  font-family: "YesevaOne";
+  font-size: 20px;
+  color: #cc9900;
+}
+.menu .menu-container .menu-section .item-list .menu-item hr {
+  border: 0;
+  border-top: 1px solid #cc9900;
+  margin: 2px 0;
+}
+.menu .menu-container .menu-section .item-list .menu-item .description {
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  color: #000000;
+  width: 95%;
+  margin: 0px;
+}
+.menu .menu-container .menu-section .item-list .special-item {
+  text-align: left;
+  margin-top: 20px;
+  padding: 5px 10px;
+  width: 100%;
+  position: relative;
+  border-image: linear-gradient(to right, transparent, #cc9900) 19;
+  border-width: 1px;
+  border-style: solid;
+}
+.menu .menu-container .menu-section .item-list .special-item .item-header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu-container .menu-section .item-list .special-item .item-header .sub-title {
+  font-family: "YesevaOne";
+  font-size: 20px;
+  color: #cc9900;
+  margin: 0px;
+}
+.menu .menu-container .menu-section .item-list .special-item .item-header .coast {
+  font-family: "YesevaOne";
+  font-size: 20px;
+  color: #cc9900;
+}
+.menu .menu-container .menu-section .item-list .special-item hr {
+  border: 0;
+  border-top: 1px solid #cc9900;
+  margin: 2px 0;
+}
+.menu .menu-container .menu-section .item-list .special-item .description {
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  color: #000000;
+  width: 95%;
+  margin: 0px;
+}
+.menu .menu-container .menu-section .item-list .special-item .marker {
+  position: absolute;
+  bottom: 100%;
+  right: 0%;
+  background: #cc9900;
+  padding: 2px 4px;
+  font-family: "Lato";
+  font-size: 12px;
+  color: #ffffff;
+}
+.reviews {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("images/reviews.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.reviews .content {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+.reviews .content .title {
+  font-family: "YesevaOne";
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+.reviews .content .description {
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  color: #ffffff;
+  width: 75%;
+  text-align: center;
+}
+.reviews .content .sign {
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  color: #ffffff;
+}
+.reviews .content .comma {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
+.reservation {
+  width: 100%;
+  height: 710px;
+  background: url("images/reservation.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.reservation .image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.reservation .image-container img {
+  width: 80%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.reservation .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  width: 30%;
+  height: 75%;
+}
+.reservation .form-container .title {
+  font-family: "YesevaOne";
+  font-size: 36px;
+  color: #cc9900;
+  margin-bottom: 0px;
+}
+.reservation .form-container .divider {
+  margin-bottom: 20px;
+}
+.reservation .form-container .description {
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.reservation .form-container .field-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.reservation .form-container .field-container .block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 25px;
+}
+.reservation .form-container .field-container .block .field {
+  position: relative;
+  width: 45%;
+}
+.reservation .form-container .field-container .block .field label {
+  font-family: "YesevaOne";
+  font-size: 14px;
+  color: #cc9900;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+.reservation .form-container .field-container .block .field input {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  border: 1px solid #cc9900;
+  font-style: italic;
+}
+.reservation .form-container .field-container #submit {
+  display: inline-block;
+  width: 200px;
+  height: 35px;
+  margin-top: 25px;
+  color: white;
+  background: #cc9900;
+  border: none;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 5%;
+  height: 300px;
+  background: #000000;
+}
+.footer .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  width: 30%;
+}
+.footer .block .title {
+  font-family: "YesevaOne";
+  font-size: 21px;
+  color: white;
+  margin: 0px;
+}
+.footer .block p {
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  width: 70%;
+  margin: 0px;
+}
+.footer .block .special {
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+.footer .block img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+    @media screen and (max-width: 850px) {
+      .header .img-logo {
+        height: 50%;
+        padding-left: 0px;
+      }
+    
+      .header nav {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    
+
+      .header nav ul li {
+        font-family: "GentiumBookBasic";
+        font-size: 15px;
+        color: white;
+        list-style-type: none;
+      }
+
+      .promo #promo-title {
+  width: 55%;
+  font-family: "YesevaOne";
+  font-size: 45px;
+  text-align: center;
+  color: white;
+}
+
+
+.about {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: url("images/about.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+.about .about-info-container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .image-container {
+  display: none;
+}
+
+
+.ingredients {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url("images/ingridients.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+.ingredients .content {
+  width: 70%;
+  height: 65%;
+  padding-top: 50px;
+  margin-right: 5%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+
+
+.menu .menu-container .menu-section .title {
+  font-family: "YesevaOne";
+  font-size: 20px;
+  color: #cc9900;
+}
+
+
+.menu .menu-container .menu-section .item-list .menu-item .item-header .sub-title {
+  font-family: "YesevaOne";
+  font-size: 15px;
+  color: #cc9900;
+  margin: 0px;
+}
+
+
+.menu .menu-container .menu-section .item-list .menu-item .description {
+  font-family: "Myriad Pro";
+  font-size: 11px;
+  color: #000000;
+  width: 95%;
+  margin: 0px;
+}
+
+
+.menu .menu-container .menu-section .item-list .special-item .item-header .sub-title {
+  font-family: "YesevaOne";
+  font-size: 15px;
+  color: #cc9900;
+  margin: 0px;
+}
+.menu .menu-container .menu-section .item-list .special-item .item-header .coast {
+  font-family: "YesevaOne";
+  font-size: 15px;
+  color: #cc9900;
+}
+
+.menu .menu-container .menu-section .item-list .special-item .description {
+  font-family: "Myriad Pro";
+  font-size: 11px;
+  color: #000000;
+  width: 95%;
+  margin: 0px;
+}
+
+.reviews .content {
+  width: 70%;
+  height: 50%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+
+.reviews .content .description {
+  font-family: "Myriad Pro";
+  font-size: 15px;
+  color: #ffffff;
+  width: 75%;
+  text-align: center;
+}
+
+.reviews .content .comma {
+  position: absolute;
+  width: 5%;
+  left: 5%;
+  top: 30%;
+}
+
+.reservation {
+  width: 100%;
+  height: 710px;
+  background: url("images/reservation.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.reservation .image-container {
+  display: none;
+}
+    }
+
+
+    
+    </style>
+  </head>
+  
+  <body>
+    <header class="header">
+      <img class="img-logo" src="./images/Logo.png" alt="logo">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Ingredients</li>
+          <li>Menu</li>
+          <li>Reviews</li>
+          <li>Reservation</li>
+          <li>
+            <img id="icon" src="./images/Social.png" alt="social icons">
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="content">
+
+        <section class="promo">
+          <h2 id="promo-title">the right ingredients for the right food</h2>
+          <!-- <div id="promo-decoration"></div>               -->
+          <img src="./images/Decoration.png">
+          
+          <div class="button-container">
+            <input id="promo-button-left" type="button" value="book a table">
+            <input id="promo-button-right" type="button" value="see the menu">                
+          </div>
+        
+        </section>
+        
+        <section class="about">     
+          <div class="about-info-container">
+            <h2 class="title">Just the right food</h2>
+            <amp-img src="./images/Divider.png"  
+            class="divider"
+            width="247"
+            height="24"
+            layout="fixed" 
+            alt="divider"> </amp-img>
+            
+            <p class="description">
+              If you’ve been to one of our restaurants, 
+              you’ve seen – and tasted – what keeps our customers coming back for more. 
+              Perfect materials and freshly baked food, delicious Lambda cakes,  muffins,
+              and gourmet coffees make us hard to resist! Stop in today and check us out!
+            </p>
+            <img id="cook" src="./images/cook.png" alt="cook">
+          </div>
+        </section>
+
+        <section class="ingredients">
+          <div class="content">
+            <h2 class="title">Fine Ingredients</h2>
+            <img class="divider" src="./images/divider_white.png" alt="divider">
+            
+            <p class="description">
+              If you’ve been to one of our restaurants, 
+              you’ve seen – and tasted – what keeps our customers coming back for more. 
+              Perfect materials and freshly baked food, delicious Lambda cakes,  muffins,
+              and gourmet coffees make us hard to resist! Stop in today and check us out!
+            </p>
+
+            <div class="image-container">
+              <img src="./images/ing1.png" alt="img1">
+              <img src="./images/ing2.png" alt="img2">
+              <img src="./images/ing3.png" alt="img3">
+            </div>
+          </div>
+        </section>
+        
+        <section class="menu">
+          <div class="menu-container">
+            <div class="menu-section">
+              <h2 class="title">Appetisers</h2>
+              <amp-img src="./images/Divider.png"  
+              class="divider"
+              width="247"
+              height="24"
+              layout="fixed" 
+              alt="divider"> </amp-img>
+              
+              <div class="item-list">
+                <div class="menu-item">
+                  <div class="item-header">
+                    <span class="sub-title">Tzatsiki</span>
+                    <span class="coast">$4.20</span>
+                  </div>
+                  <hr>
+                  <p class="description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-header">
+                    <span class="sub-title">Aubergin salad</span>
+                    <span class="coast">$5.55</span>
+                  </div>
+                  <hr>
+                  <p class="description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-header">
+                    <span class="sub-title">Secret</span>
+                    <span class="coast">$5.15</span>
+                  </div>
+                  <hr>
+                  <p class="description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-section">
+              <h2 class="title">Salads</h2>
+              <amp-img src="./images/Divider.png"  
+              class="divider"
+              width="247"
+              height="24"
+              layout="fixed" 
+              alt="divider"> </amp-img>
+              
+              <div class="item-list">
+
+                <div class="menu-item">
+                  <div class="item-header">
+                    <span class="sub-title">Olive special</span>
+                    <span class="coast">$5.99</span>
+                  </div>
+                  <hr>
+                  <p class="description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+
+                <div class="special-item">
+                  <div class="item-header">
+                    <span class="sub-title">Greek salad</span>
+                    <span class="coast">$5.50</span>
+                  </div>
+                  <hr>
+                  <p class="description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                  <span class="marker">Special</span>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-header">
+                    <span class="sub-title">Gusto salad</span>
+                    <span class="coast">$5.25</span>
+                  </div>
+                  <hr>
+                  <p class="description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-container">
+            <div class="menu-section">
+              <h2 class="title">Starters</h2>
+              <amp-img src="./images/Divider.png"  
+              class="divider"
+              width="247"
+              height="24"
+              layout="fixed" 
+              alt="divider"> </amp-img>
+              
+              <div class="item-list">
+                <div class="menu-item">
+                  <div class="item-header">
+                    <span class="sub-title">Haloumi</span>
+                    <span class="coast">$4.20</span>
+                  </div>
+                  <hr>
+                  <p class="description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-header">
+                    <span class="sub-title">Spinach Pie</span>
+                    <span class="coast">$5.55</span>
+                  </div>
+                  <hr>
+                  <p class="description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="menu-section">
+              <h2 class="title">Main Dishes</h2>
+              <amp-img src="./images/Divider.png"  
+              class="divider"
+              width="247"
+              height="24"
+              layout="fixed" 
+              alt="divider"> </amp-img>
+              <div class="item-list">
+
+                <div class="menu-item">
+                  <div class="item-header">
+                    <span class="sub-title">Cornish Mackarel</span>
+                    <span class="coast">$5.99</span>
+                  </div>
+                  <hr>
+                  <p class="description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+
+                <div class="special-item">
+                  <div class="item-header">
+                    <span class="sub-title">Roast Lamb</span>
+                    <span class="coast">$5.50</span>
+                  </div>
+                  <hr>
+                  <p class="description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                  <span class="marker">Special</span>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-header">
+                    <span class="sub-title">Fried Chicken</span>
+                    <span class="coast">$5.25</span>
+                  </div>
+                  <hr>
+                  <p class="description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                </div>
+
+                <div class="menu-item">
+                  <div class="item-header">
+                    <span class="sub-title">Pastitsio</span>
+                    <span class="coast">$5.99</span>
+                  </div>
+                  <hr>
+                  <p class="description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+        
+        <section class="reviews">
+          <div class="content">
+            <h2 class="title">Guest Reviews</h2>
+            <img class="divider" src="./images/divider_white.png" alt="divider">
+            <img class="comma" src="./images/commas.png" alt="comma">
+            <p class="description">
+              If you’ve been to one of our restaurants, 
+              you’ve seen – and tasted – what keeps our customers coming back for more. 
+              Perfect materials and freshly baked food, delicious Lambda cakes,  muffins,
+              and gourmet coffees make us hard to resist! Stop in today and check us out!
+            </p>
+            <p class="sign"> -food inc, New York</p>
+          </div>
+        </section>
+           
+        <section class="reservation">
+          <div class="form-container">
+            <h2 class="title">Just the right food</h2>
+            <amp-img src="./images/Divider.png"  
+            class="divider"
+            width="247"
+            height="24"
+            layout="fixed" 
+            alt="divider"> </amp-img>
+            <p class="description">
+              If you’ve been to one of our restaurants, 
+              you’ve seen – and tasted – what keeps our customers coming back for more. 
+            </p>
+            <P class="description">
+              Perfect materials and freshly baked food, delicious Lambda cakes,  muffins,
+              and gourmet coffees make us hard to resist! Stop in today and check us out!
+            </P>
+            <form class="field-container" method="post" action-xhr="http://localhost" target="_top">
+              <div class="block">
+                <div class="field">
+                  <label for="name">Name</label><br>
+                  <input id="name" type="text" placeholder="your name*" required>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label><br>
+                  <input id="email" type="text" placeholder="your email*" required>
+                </div>
+              </div>
+    
+              <div class="block">
+                <div class="field">
+                  <label for="date">Date</label><br>
+                  <input id="date" type="text" placeholder="date*" required>
+                </div>
+                <div class="field">
+                  <label for="some">Party Number</label><br>
+                  <input id="some" type="text" placeholder="party number*">
+                </div>
+              </div>
+
+              <input id="submit" type="submit" value="Book now!">
+            </form>
+          </div>
+          <div class="image-container">
+            <img src="./images/img5.png"  alt="img5">
+            <img src="./images/img4.png" alt="img4">
+          </div>
+        </section>
+      </main>
+
+    <footer class="footer">
+      <div class="block">
+        <h2 class="title">About Us</h2>
+        <amp-img src="./images/Divider.png"  
+        class="divider"
+        width="247"
+        height="24"
+        layout="fixed" 
+        alt="divider"> </amp-img>
+        <p>
+          Lambda's new and expanded Chelsea location represents a truly authentic <span class="special"> Greek </span> patisserie, 
+          featuring breakfasts of fresh croissants and steaming bowls of café.
+        </p>
+        <p>
+          Lamda the best restaurant in town
+        </p>
+      </div>
+
+      <div class="block">
+        <h2 class="title">Opening Hours</h2>
+        <img class="divider" src="./images/divider_white.png" alt="divider">
+        <p> <span class="special">Mon-Thu:</span>7:00am-8:00pm </p>
+        <p> <span class="special">Fri-Sun:</span>7:00am-10:00pm </p>
+        <img src="./images/cards.png" alt="cards">
+      </div>
+
+      <div class="block">
+        <h2 class="title">Our Location</h2>
+        <img class="divider" src="./images/divider_white.png" alt="divider">
+        <p> <span class="special">19th Paradise Street Sitia</span></p>
+        <p> <span class="special">128 Meserole Avenue</span></p>
+        <img src="./images/icons.png" alt="icons">
+      </div>
+    </footer>
+  </body>
+
+</html>
